@@ -1,0 +1,30 @@
+{
+  "name": "svelte-ts-todo",
+  "version": "0.0.1",
+  "scripts": {
+    "cloud:dev": "vite dev",
+    "cloud:build": "vite build"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "next",
+    "@types/cookie": "^0.5.1",
+    "svelte": "^3.46.0",
+    "svelte-check": "^2.7.1",
+    "svelte-preprocess": "^4.10.6",
+    "tslib": "^2.3.1",
+    "typescript": "^4.7.4",
+    "vite": "^3.1.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "@fontsource/fira-mono": "^4.5.0",
+    "@lukeed/uuid": "^2.0.0",
+    "@serverless/cloud": "^2.10.16",
+    "cookie": "^0.4.1"
+  },
+  "serverless": {
+    "app": "e-design",
+    "org": "herffjones"
+  }
+}
