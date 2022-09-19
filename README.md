@@ -1,9 +1,23 @@
-# Serverless Cloud SvelteKit Example
+# Herff Jones - Next Generation (BETA)
+Next generation serverless application leveraging [Serverless Cloud](https://serverless.com), [SvelteKit](https://kit.svelte.dev) & [Tailwind](https://tailwindcss.com).
 
-This is a SvelteKit sample application adapted for Serverless Cloud.
+## Getting Started
+- Install [Node.js LTS](https://node.js)
+- Install [VSCode IDE](https://code.visualstudio.com)
+- Install [PNPM](https://pnpm.io): `npm i -g pnpm`
+- Install [Serverless Cloud CLI](https://www.serverless.com/cloud/docs/cli): `npm i -g @serverless/cloud`
+- Clone the repository and open in VSCode.
+- Run: `pnpm install`
 
-Notice how `svelte.config.js` and `vite.config.ts` makes use of our built-in helper to do most of the configuration for you! The Serverless Cloud Runtime will detect, build, and serve your application, no further configuration is required, but you can, as this example demonstrates, use the `vite.config.ts` file to configure things like methodOverride as well as proxy certain requests to the Cloud API local proxy.
+## Run Development Environment
+- Run: `cloud dev`
 
-> Note: We use `src/assets` as our pre-build assets directory, because `static` is where Cloud loads them from. This is the opposite of SvelteKit, which uses `static` as the source directory. This is why static is in `.gitignore`.
+## Build Application
+- Run: `cloud build`
 
-Check out `src/routes/todos/+page.server.ts` and see how easy it is to use the Cloud SDK directly to interact with Data, and see `./index.js` to see using the Data SDK to write event handlers for those data operations - write only a few lines of code to react to data events!
+## Share Application
+- Run: `cloud share`
+
+## Serverless Cloud Terminal
+- Run: `cloud`
+- [Full CLI Reference](https://www.serverless.com/cloud/docs/cli)
